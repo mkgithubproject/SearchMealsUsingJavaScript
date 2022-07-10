@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <title>My Meal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-8">
+                <form autocomplete="off">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchMealInput" placeholder="Search meals here..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2" value="">
+                        <button class="btn btn-primary" type="button" id="button-addon2">Search Meals</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4 ">
+                <div class="col">
+                    <a class="btn btn-primary" href="./html/my_favourite.html" role="button" target="_blank">My
+                        Favourites</a>
+                </div>
+            </div>
+        </div>
+        <div class="row dropdownOnsearch d-none">
+            <div class="col-8">
+                <div class="list-group" id="suggestList">
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-5  p-3">
+            <div class="col-md-8 col-12">
+                <div class="list-group" id="list_of_meals">
+                </div>
+            </div>
+            <div class="col-md-4 col-12" id="list_of_favorite_button">
+                <!-- <button type="button" class="btn bg-info">Add to favourite</button> -->
+            </div>
+        </div>
+    </div>
+    <script src="script/home.js"></script>
+</body>
+
+</html>
