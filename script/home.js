@@ -66,7 +66,7 @@ function addToFavourite(event) {// add meals to favourite list
 }
 function showDescriptionOfMeal(event) {// show description of particular meal
   localStorage.setItem("passData", event.target.getAttribute("data-meal"));
-  window.open("../html/meal_details.html", '_blank');
+  window.open("./html/meal_details.html", '_blank');
 }
 function showSuggestions() {// show suggestions on search
   let searhKeyword = document.getElementById("searchMealInput").value;
